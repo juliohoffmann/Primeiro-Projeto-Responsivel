@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ====== DESKTOP ORIGINAL ====== */
+header {
+  margin-top: 47px;
+  margin-left: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.link-header {
+  text-align: center;
+  line-height: 21px;
+  color: #172330;
+  letter-spacing: 0.87px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+.button-header {
+  background-color: #6FBF44;
+  border-radius: 6px;
+  border: 1px solid #4C8538;
+  width: 124px;
+  height: 51px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.location-image {
+  margin: 163px 0 0 123px;
+  display: inline-block;
+}
+
+section {
+  display: inline-block;
+  width: 493px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 62px;
+  line-height: 82px;
+  letter-spacing: 0.6px;
+  color: #161A49;
+}
+
+p {
+  font-weight: 400;
+  color: #48585A;
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.5px;
+  margin-top: 47px;
+  margin-bottom: 55px;
+}
+
+.link-button-learn-more {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 1px;
+  color: #6FBF44;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+
+/* Tablet (mantém o design principal, apenas ajusta proporções) */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .location-image {
+    margin: 60px auto 0 auto;
+    max-width: 70%;
+    height: auto;
+    display: block;
+  }
+
+  section {
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+}
+
+/* Mobile (layout igual ao Figma) */
+@media (max-width: 768px) {
+  header {
+    justify-content: flex-end;
+    margin: 20px;
+  }
+
+  /* Oculta os links e mantém apenas o botão "Sign up" */
+  .link-header {
+    display: none;
+  }
+
+  .button-header {
+    width: 90px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+
+  /* Texto e imagem centralizados */
+  .container {
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  section {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 26px;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .link-button-learn-more {
+    font-size: 16px;
+    color: #6FBF44;
+    margin-bottom: 30px;
+  }
+
+  .location-image {
+    display: block;
+    margin: 0 auto;
+    max-width: 85%;
+    height: auto;
+  }
+}
+
+/* Telas muito pequenas (até 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .button-header {
+    width: 80px;
+    height: 32px;
+    font-size: 13px;
+  }
+}
